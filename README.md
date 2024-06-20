@@ -1,70 +1,77 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Micro-Frontend-Example
+A demonstration of a micro frontend architecture where components are built using different frontend frameworks - React, Angular, and Vue.js. This repository showcases how multiple frontend frameworks can be integrated into a single application, allowing developers to leverage the strengths of each framework within a unified project structure.
 
-## Available Scripts
 
-In the project directory, you can run:
+# Micro Frontend Example
 
-### `npm start`
+This project demonstrates a micro frontend architecture where components are built using different frontend frameworks - React, Angular, and Vue.js.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Micro frontend is an architectural style where independently deliverable frontend applications are composed into a greater whole. In this project, we have separate components built with React, Angular, and Vue.js, all integrated into a single application.
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed
+- Angular CLI (for Angular component)
+- Vue CLI (for Vue.js component)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone (https://github.com/bamaniyamilan/Micro-Frontend-Example)
+   cd micro-frontend-example
 
-### `npm run eject`
+npm install
+cd ../react-component
+npm install
+cd ../vue-component
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Running the Application
+Build each component:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+# Angular component
+cd angular-component
+ng build --prod
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# React component
+cd ../react-component
+npm run build
 
-## Learn More
+# Vue.js component
+cd ../vue-component
+npm run build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Copy code
+# From the root directory
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Open your browser and navigate to http://localhost:8080 to see the application running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+#Usage
+Once the application is running, you will see the integrated components from React, Angular, and Vue.js on the same page. Each component demonstrates a simple "Hello World" message.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#Contributing
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request.
 
-### Advanced Configuration
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Feel free to modify the content as needed, such as adding more detailed setup instructions, usage examples, or any additional documentation specific to your project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+connect -> https://www.linkedin.com/in/milanbamaniya/
