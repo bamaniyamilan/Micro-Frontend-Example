@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microfrontend App</title>
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@my-micro-frontend-app/home": "//localhost:9000/my-micro-frontend-app.js",
+        "contact-us": "//localhost:8080/contact-us.js",
+        "about-us": "//localhost:4201/about-us.js"
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/transform.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/single-spa/lib/system/single-spa.min.js"></script>
+  <script type="module" src="/src/index.js"></script>
+  <!-- <script type="module" src="/contact-us/src/main.js"></script> -->
+</head>
+<body>
+  <div id="main-content"></div>
+</body>
+</html>
